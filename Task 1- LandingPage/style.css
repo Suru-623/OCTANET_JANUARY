@@ -1,0 +1,416 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+text-decoration: none;
+list-style:none;
+scroll-behavior: smooth;
+}
+body{
+    background-color:bisque;
+    color:white;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    right:0;
+width:100%;
+z-index:1000;
+padding:1rem 8%;
+transition:ease .40s;
+background-color: rgb(208, 176, 247);
+}
+.logo{
+    font-size: 2.9rem;;
+    font-weight: 600;;
+    letter-spacing: 0.1rem;
+    color:rgb(49, 104, 4);
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color: rgb(30, 30, 29);
+    padding: 1rem 1.2rem;
+    border-radius:0.4rem;
+    font-size:1.1rem;
+    font-weight:500;
+    transition: ease .40s;
+    
+}
+.navbar a:hover{
+    background: rgb(38, 101, 2);
+    color:aquamarine;
+    box-shadow: 0.5rem 1rem 3rem rgb(75 75 75 / 30%);
+    border-radius: 0.4rem;
+}
+#menu-icon{
+    color: rgb(23, 23, 22);
+    font-size: 2.0rem;
+    z-index:10001;
+    cursor: pointer;
+    margin-left: 1px;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url(../img/home.png);
+    background-size: cover;
+    background-position: center;
+    display:grid;
+    grid-template-columns:repeat(1, 1fr);
+    align-items:center;
+}
+.home-text h1{
+    line-height: 1.2;
+    color:rgb(198, 32, 32);
+    font-size:2rem ;
+    font-family: 'Paytone One', sans-serif;
+    letter-spacing:0.4rem ;
+    margin-bottom: 2rem;
+    padding: 0.6rem;
+}
+p{
+    padding: 0.6rem;
+}
+.one-btn{
+    width:4rem;
+    height:3rem;
+    background-color: rgb(234, 94, 34);
+    margin-left: 8rem;
+    border-radius: 3.5rem;
+}
+.one-btn a:hover{
+    background-color: aquamarine;
+}
+.home-text{
+  animation: slideleft 1s linear forwards;
+}
+@keyframes slideleft{
+  0%{
+      transform: translate(100rem);
+      opacity:0;
+  }
+  
+}
+/* CSS of about */
+.image-slideshow {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+  border: 0.5rem solid aqua;
+    border-radius: 10%;
+    box-shadow: 0 0.2rem 0.4rem rgba(2, 83, 29, 0.527);
+}
+img {
+  width: 100%;
+    border-radius: 8%;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
+}
+.about-content {
+    text-align: center;
+    color: aquamarine;
+    /* max-width: 80rem; */
+    
+  }
+  .heading {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: bisque;
+  }
+  
+  .about-content h3 {
+    font-size: 1.3rem;
+    padding: .3rem 0;
+  }
+  
+  .about-content .btn-box {
+    display: inline-block;
+    width: 8rem;
+    height: 2.0rem;
+    margin-top: 1.8rem;
+    color:bisque;
+    background-color: red;
+    margin-bottom: 3rem;
+    border-radius: 3.5rem;
+  }
+  
+  .about-content .btn-box a:hover {
+    color: #fff;
+  }
+  
+  .about-content .btn-box a::before {
+    background-color:  bisque;
+  }
+  .about-content{
+    animation: slideleft 1s linear forwards;
+  }
+  @keyframes slideleft{
+    0%{
+        transform: translate(100rem);
+        opacity:0;
+    }
+  }   
+
+/*Service section css*/
+.services{
+    width: 100%;
+    padding: 1.0rem 0rem;
+    background-color: #0b6c06b6;
+      background: url(../img/service.webp);
+      background-size: cover;
+      padding: 0.29rem;
+    
+  }
+  .services h2{
+    color:blue;
+    font-size: 7.5rem;
+    text-transform: capitalize;
+    margin-top: 0rem;
+    margin-bottom: 2.0rem;
+    text-align: center;
+  }
+  .ca-page{
+    position: relative;
+    width: 30.0rem;
+    height: 30.0rem;
+    margin: 1.0rem;
+    border: 0.5rem solid aqua;
+    border-radius: 50%;
+    box-shadow: 0 0.2rem 0.4rem rgba(2, 83, 29, 0.527);
+    overflow: hidden;
+  }
+  .box .ca-page .content{
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+    right: 0rem;
+    padding: 1.5rem;
+    background-color: #7df68b;
+    color: #182f32;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .box .ca-page:hover .content{
+    opacity: 1;
+  }
+  .ca-page h3{
+    font-size: 2.0rem;
+    margin-top: 0;
+    margin-bottom: 1.0rem;
+    color: #a52806df;
+  }
+  .box .ca-page p{
+    font-size: 1.4rem;
+    margin-bottom: 1.0rem;
+  }
+  .box .ca-page button{
+    position:relative;
+    background-color: #7a0c98;
+    color: #fff;
+    text-decoration: none;
+    border: 0.2rem solid rgb(0, 0, 0);
+    font-weight: bold;
+    transform:.4s;
+    padding: 1.3rem 3.0rem;
+    border-radius: 50%;
+  }
+  .box .ca-page button:hover{
+    background-color: #d79614;
+    color: #213032;
+    border: 0.2rem solid black;
+    cursor: pointer;
+  }
+  .box .ca-page img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .items{
+    width: 100%;
+    padding: 10.0rem 0rem;
+    background-color: #0dacc1;
+  }
+  .items h2{
+    color: #edffef;
+    font-size: 7.5rem;
+    text-transform: capitalize;
+    margin-top: 0rem;
+    margin-bottom: 2.0rem;
+    text-align: center;
+  }  
+  /*project section css */
+
+  .project{
+    width: 100%;
+    padding: 4rem 0rem;
+    background-color: rgb(94, 92, 92);
+  }
+  .project h2{
+    color: #edffef;
+    font-size: 2.8rem;
+    text-transform: capitalize;
+    margin-top: 0rem;
+    margin-bottom: 2.0rem;
+    text-align: center;
+  }
+  .box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .page{
+    position: relative;
+    width: 30rem;
+    height: 20rem;
+    margin: 1rem;
+    border: 0.8rem solid #d9f00f;
+    border-radius: 4rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+  .box .page img{
+    width: 100%;
+    height: 1005;
+    object-fit: cover; 
+  }
+  .box .page .content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    background-color: #edffef;
+    color: #182f32;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .box .page:hover .content{
+    opacity: 1;
+  }
+  .page h3{
+    font-size: 2.0rem;
+    margin-top: 0;
+    margin-bottom: 1.0rem;
+    color: #213032;
+  }
+  .box .page p{
+    font-size: 1.4rem;
+    margin-bottom: 1.0rem;
+  }
+  .box .page button{
+    position:relative;
+    background-color: #213032;
+    color: #fff;
+    text-decoration: none;
+    border: 0.2rem solid black;
+    font-weight: bold;
+    transform:.4s;
+    padding: 1.3rem 3.0rem;
+  }
+  .box .page button:hover{
+    background-color: #97a2a3;
+    color: #213032;
+    border: 0.2rem solid black;
+    cursor: pointer;
+  }
+  /* CSS of contact section */
+  @import url('https://fonts.googleapi.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+.contact
+{
+  position:relative;
+  min-height: 100vh;
+  padding: 5rem 10rem;
+  background: url(../img/contact1.jpeg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact .content{
+  
+  text-align: center;
+}
+.contact .content h2{
+  color: #e112f0;
+  font-size: 3.6rem;
+  font-weight: 500;
+}
+.contact .content p{
+  color: #c45a04;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.container{
+  display: flex;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.container .info{
+  display: flex;
+  flex-direction: column;
+  width:50%;
+}
+.container .info .rightbox{
+  padding:2rem 0;
+  display: flex;
+  position: relative;
+}
+.container .info .rightbox .icon{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background: white;
+  color: #6810f5;
+  height: 60px;
+  font-size: 2.2rem;
+  border-radius: 100%;
+}
+.container .info .rightbox .text{
+  display: flex;
+  margin-left: 2rem;
+  color:#de116a;
+  font-size: 1.6rem;
+  flex-direction: column;
+  font-weight: 400;
+}
+.container .info .rightbox .text h3{
+  font-weight: 500;
+  color: #c45a04;
+}
+.form{
+  
+  padding: 3rem;
+  background:#de116a;
+  border-radius: 10%;
+}
+.bottom{
+  background-color:#de116a;
+  padding-left: 5.5rem;
+  font-weight: 300;
+}
+.input{
+  color:aqua ;
+  font-weight: 400;
+}  
